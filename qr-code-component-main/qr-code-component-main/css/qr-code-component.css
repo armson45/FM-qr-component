@@ -23,11 +23,6 @@
 body {
     background-color: var(--slate-300);
     font-family: 'Outfit', sans-serif;
-    /* display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center; */
-
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -35,7 +30,6 @@ body {
 }
 
 .container {
-    /* margin: 10.4rem auto; */
     grid-column: 6/8;
     grid-row: 2/3;
     background-color: var(--white);
@@ -65,10 +59,16 @@ body {
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 1.2rem;
     text-align: center;
+    grid-row: -1;
+    grid-column: 5/9;
+    margin-bottom: 1rem;
+    color: hsl(359, 72%, 28%);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(198, 11%, 18%);
 }
